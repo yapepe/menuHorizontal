@@ -1,0 +1,56 @@
+.MenuHorizontal {
+  background-color: white;
+  width: 100%;
+  position: fixed;
+  height: 10vh;
+}
+
+.MenuHorizontal .MenuHorizontal__hamburger {
+  position: absolute;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 3em;
+  right: 0;
+  cursor: pointer;
+  background-color: lightcoral;
+}
+
+.MenuHorizontal .MenuHorizontal__lista__horizontal {
+  position: absolute;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  right: 0;
+  background-color: lightcoral;
+}
+
+.MenuHorizontal .MenuHorizontal__lista__horizontal .MenuHorizontal__lista__horizontal__links {
+  padding: 25px;
+}
+
+.MenuHorizontal .MenuHorizontal__lista__horizontal .MenuHorizontal__lista__horizontal__links a {
+  text-decoration: none;
+}
+
+.MenuHorizontal .MenuHorizontal__lista__vertical {
+  position: absolute;
+  display: block;
+  right: 50vw;
+  width: 100vw;
+  top: 10vh;
+  -webkit-transform: translate(50%);
+          transform: translate(50%);
+  background-color: lightcoral;
+  text-align: center;
+}
+
+.MenuHorizontal .MenuHorizontal__lista__vertical .MenuHorizontal__lista__vertical__links {
+  padding: 25px;
+}
+
+.MenuHorizontal .MenuHorizontal__lista__vertical .MenuHorizontal__lista__vertical__links a {
+  text-decoration: none;
+  background-color: greenyellow;
+}
+/*# sourceMappingURL=MenuHorizontal.css.map */

@@ -1,0 +1,53 @@
+.MenuHorizontal {
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    height: 10vh;
+
+    .MenuHorizontal__hamburger {
+        position: absolute;
+        display: inline-flex;
+        font-size: 3em;
+        right: 0;
+        cursor: pointer;
+        background-color: lightcoral;
+    }
+
+    .MenuHorizontal__lista__horizontal {
+        position: absolute;
+        display: inline-flex;
+        right: 0;
+        background-color: lightcoral;
+
+        .MenuHorizontal__lista__horizontal__links {
+            
+            padding: 25px;
+
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+
+
+    .MenuHorizontal__lista__vertical {
+        position: absolute;
+        display: block;
+        right: 50vw;
+        width: 100vw;
+        top: 10vh;
+        transform: translate(50%);
+        background-color: lightcoral;
+        text-align: center;
+
+        .MenuHorizontal__lista__vertical__links {
+            
+            padding: 25px;
+
+            a {
+                text-decoration: none;
+                background-color: greenyellow;
+            }
+        }
+    }
+}
