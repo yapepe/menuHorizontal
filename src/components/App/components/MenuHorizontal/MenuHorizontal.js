@@ -14,9 +14,9 @@ export default function MenuHorizontal( {lista} ) {
             if ( window.innerWidth < 680 ) {
                 setMostrarHam(true)
             } 
-            
                 else {
                 setMostrarHam(false)
+                setMostrarListaVertical(false)
             }
         }
         checarCondicionResize()
