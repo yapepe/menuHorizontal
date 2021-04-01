@@ -30,7 +30,10 @@ export default function MenuHorizontal( {lista} ) {
     return (
       <div className="MenuHorizontal">
           { (mostrarHam)
-    ? <div className="MenuHorizontal__hamburger" onClick={ () => setMostrarListaVertical(!mostrarListaVertical) }>=
+    ? <div>
+        <div className="MenuHorizontal__hamburger" onClick={ () => setMostrarListaVertical(!mostrarListaVertical) }>=
+        
+        </div>
         { (mostrarListaVertical)
         ?<div className="MenuHorizontal__lista__vertical">
             { (Array.isArray(lista))
@@ -45,7 +48,9 @@ export default function MenuHorizontal( {lista} ) {
                         )
                     })
                     : console.log('CRITICAL ERROR: la entrada  no es un array')    
-                }
+            }
+            <div className='MenuHorizontal__lista__vertical__cerrar' onClick={ () => setMostrarListaVertical(!mostrarListaVertical) } >
+            </div>
             </div>
         : null
         }

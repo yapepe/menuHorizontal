@@ -2,7 +2,7 @@
     background-color: white;
     width: 100%;
     position: fixed;
-    height: 10vh;
+    height: 12vh;
 
     .MenuHorizontal__hamburger {
         position: absolute;
@@ -17,7 +17,6 @@
         position: absolute;
         display: inline-flex;
         right: 0;
-        background-color: lightcoral;
 
         .MenuHorizontal__lista__horizontal__links {
             
@@ -25,6 +24,7 @@
 
             a {
                 text-decoration: none;
+                font-size: 1.5em;
             }
         }
     }
@@ -35,7 +35,7 @@
         display: block;
         right: 50vw;
         width: 100vw;
-        top: 10vh;
+        top: 12vh;
         transform: translate(50%);
         background-color: lightcoral;
         text-align: center;
@@ -47,7 +47,14 @@
             a {
                 text-decoration: none;
                 background-color: greenyellow;
+                font-size: 2em;
             }
         }
+    }
+
+    .MenuHorizontal__lista__cerrar {
+        background-color: red;
+        width: 100vw;
+        height: 100vh;
     }
 }
