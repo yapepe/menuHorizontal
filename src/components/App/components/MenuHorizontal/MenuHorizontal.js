@@ -13,7 +13,9 @@ export default function MenuHorizontal( {lista} ) {
         const checarCondicionResize = ()=>{
             if ( window.innerWidth < 680 ) {
                 setMostrarHam(true)
-            } else {
+            } 
+            
+                else {
                 setMostrarHam(false)
             }
         }
@@ -35,7 +37,8 @@ export default function MenuHorizontal( {lista} ) {
         
         </div>
         { (mostrarListaVertical)
-        ?<div className="MenuHorizontal__lista__vertical">
+        ?<div>
+            <div className="MenuHorizontal__lista__vertical">
             { (Array.isArray(lista))
                     ? lista.map( link => {
                         linkKey++
@@ -49,9 +52,10 @@ export default function MenuHorizontal( {lista} ) {
                     })
                     : console.log('CRITICAL ERROR: la entrada  no es un array')    
             }
-            <div className='MenuHorizontal__lista__vertical__cerrar' onClick={ () => setMostrarListaVertical(!mostrarListaVertical) } >
             </div>
+            <div className='MenuHorizontal__lista__vertical__cerrar' onClick={ () => setMostrarListaVertical(!mostrarListaVertical) }>
             </div>
+        </div>
         : null
         }
         </div>

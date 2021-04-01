@@ -55,8 +55,8 @@
   font-size: 2em;
 }
 
-.MenuHorizontal .MenuHorizontal__lista__cerrar {
-  background-color: red;
+.MenuHorizontal .MenuHorizontal__lista__vertical__cerrar {
+  background-color: none;
   width: 100vw;
   height: 100vh;
 }
